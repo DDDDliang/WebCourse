@@ -75,29 +75,23 @@ div.tableContainer {
 div.tableRow {
   display: table-row;
 }
+
 .drinks {
   display: table-cell;
   background-color: #efe5d0;
-  padding:15px;
-}
-.sprite-container {
-  width: 260px;
-  height: 100%
-  overflow: hidden; /* 隐藏溢出部分 */ 
-}
-.header-logo {
-  background-image: url(images/header.gif);
-  background-position-x: 0px;
-  background-position-y: 0px;
+  padding:15px; 
 }
 
-.header-slogan {
-  background-image: url(images/header.gif);
-  background-position-x: 0px;
-  background-position-y: -540px 0px; 
+.header-img{
+  width: 260px;
+  height: 108px;
+  background-image: url(./images/header.gif);
 }
-.header-slogan {
-  background-image: url(images/header.gif);
-  background-position-x: 260px 0px;
-  float: right;
+div.right-header{
+  background-position-x: -540px;
+  float: right; 
+}
+div.left-header{
+  background-position-x:0px;
+  float: left; 
 }
