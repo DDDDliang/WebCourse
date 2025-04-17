@@ -20,6 +20,8 @@ body {
 }
 
 .main {
+  display: table-cell;
+  vertical-align: top;
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
@@ -27,17 +29,12 @@ body {
 }
 
 .sidebar {
+  display: table-cell;
+  vertical-align: top;
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
   margin:           0px 10px 10px 10px;
-  width: 200px;
-
-  /*position: absolute;
-  top: 150px;
-  right: 200px;
-  width: 200px;
-*/
 }
 
 .footer {
@@ -47,7 +44,6 @@ body {
   padding:          15px;
   margin:           10px;
   font-size:        90%;
-  clear: right;
 }
 
 h1 {
@@ -71,4 +67,11 @@ a:visited {
   color:            #675c47;
   text-decoration:  none;
   border-bottom:    thin dotted #675c47;
+}
+div.tableContainer {
+  display: table;
+  border-spacing: 10px;
+}
+div.tableRow {
+  display: table-row;
 }
