@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latest campus news from Stanford University featuring research, events and faculty stories">
+    <title>Campus News | Stanford University</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            color: #2E2D29;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .news-header {
+            margin-bottom: 30px;
+            text-align: center;  /* 文本居中 */
+            max-width: 800px;   /* 限制宽度 */
+            margin-left: auto;  /* 自动左右边距 */
+            margin-right: auto; /* 实现容器居中 */
+            padding: 0 20px;   /* 添加内边距 */
+        }
+        
+        .news-header h1 {
+            font-size: 2.5rem;
+            color: #8C1515;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .news-header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+            list-style: none;
+        }
+        
+        .news-item {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        
+        .news-category {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: #8C1515;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        
+        .news-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        
+        .news-excerpt {
+            color: #555;
+            font-size: 1rem;
+        }
+        
+        .more-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #8C1515;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .more-link:hover,
+        .more-link:focus {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .news-header h1 {
+                font-size: 2rem;
+            }
+            
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            .news-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="news-header" role="banner">
+        <h1>Campus News</h1>
+        <p>Stories about people, research, and innovation across the Farm</p>
+    </header>
+    
+    <main role="main">
+        <section aria-labelledby="news-heading">
+            <h2 id="news-heading" class="visually-hidden">Latest News Stories</h2>
+            
+            <ul class="news-grid" role="list">
+                <li class="news-item" role="listitem">
+                    <article>
+                        <p class="news-category">RESEARCH MATTERS</p>
+                        <h3 class="news-title">
+                            <a href="#">'Step by step, we've made a huge amount of progress'</a>
+                        </h3>
+                        <p class="news-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+                    </article>
+                </li>
+                
+                <li class="news-item" role="listitem">
+                    <article>
+                        <p class="news-category">EARTH & CLIMATE</p>
+                        <h3 class="news-title">
+                            <a href="#">Missed school is an overlooked consequence of tropical cyclones</a>
+                        </h3>
+                        <p class="news-excerpt">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.</p>
+                    </article>
+                </li>
+                
+                <li class="news-item" role="listitem">
+                    <article>
+                        <p class="news-category">ECONOMICS</p>
+                        <h3 class="news-title">
+                            <a href="#">In new survey, Californians weigh in on home insurance crisis and economic outlook</a>
+                        </h3>
+                        <p class="news-excerpt">Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+                    </article>
+                </li>
+                
+                <li class="news-item" role="listitem">
+                    <article>
+                        <p class="news-category">HEALTH & MEDICINE</p>
+                        <h3 class="news-title">
+                            <a href="#">Dermatologist Jean Tang explains breakthrough skin graft treatment for rare disease</a>
+                        </h3>
+                        <p class="news-excerpt">Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae.</p>
+                    </article>
+                </li>
+                
+                <li class="news-item" role="listitem">
+                    <article>
+                        <p class="news-category">LIBRARIES & ARCHIVES</p>
+                        <h3 class="news-title">
+                            <a href="#">Minglived prototype, the 'origin of Chinese computing,' finds a home at Stanford</a>
+                        </h3>
+                        <p class="news-excerpt">Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+                    </article>
+                </li>
+                
+                <li class="news-item" role="listitem">
+                    <article>
+                        <p class="news-category">IN THE SPOTLIGHT</p>
+                        <h3 class="news-title">
+                            <a href="#">Meet our faculty: Anna Lembke</a>
+                        </h3>
+                        <p class="news-excerpt">Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius.</p>
+                    </article>
+                </li>
+            </ul>
+            
+            <nav aria-label="More news navigation">
+                <a href="#" class="more-link">More campus news →</a>
+            </nav>
+        </section>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const style = document.createElement('style');
+            style.textContent = `
+                .visually-hidden {
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    padding: 0;
+                    margin: -1px;
+                    overflow: hidden;
+                    clip: rect(0, 0, 0, 0);
+                    white-space: nowrap;
+                    border: 0;
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>
