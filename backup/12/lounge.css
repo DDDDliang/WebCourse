@@ -1,0 +1,43 @@
+ HEAD
+p{
+  color: maroon;
+  font-size: 1rem;
+}
+h1,h2{
+  /*font-family: Arial;*/
+  color:gray;
+  font-size: 1.5rem;
+}
+h1{
+  border-bottom: 1px solid black;
+  font-size: 2rem;
+}
+body{
+  font-size: 20rem;
+  font-family: Arial;
+  font-size : larger;
+}
+em {
+  font-family:"Cascadia Mono";
+}
+p{
+  color: maroon;
+  font-size:1rem;
+}
+h1,h2{
+  /*font-family: Arial;*/
+  color:gray;
+  font-size: 1.5rem;
+}
+h1{
+  border-bottom: 1px solid black;
+  font-size: 2rem;
+}
+body{
+  font-size: 20rem;
+  font-family: Arial;
+  font-size : larger;
+}
+em {
+  font-family:"Cascadia Mono";
+}
