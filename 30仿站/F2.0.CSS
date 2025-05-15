@@ -102,8 +102,9 @@ hr {
 }
 
 .more-link:hover {
-  text-decoration: underline;
   text-align: center;
+  background-color: hsl(0, 78%, 28%);
+  border-color:hsl(0, 78%, 28%);
 }
 
 @media (max-width: 800px) {
