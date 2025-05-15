@@ -3,20 +3,27 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  border: none;
 }
 
 body {
   font-family: 'helvetica neue', Arial,sans-serif;
-  max-width: 800px;
+  width: 1022px;
+  height: 1043.66px;
+  max-width: none;
   margin: 0 auto;
   padding: 40px 20px;
-  line-height: 1.6;
-  color: #333
+  color: #333;
+  overflow: auto;
+  background-color: #f4f4f4;
+  line-height: 1.5;
+  font-size: 1.8em;
+  font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 header {
   margin-bottom: 30px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #000;
   margin-bottom: 10px;
   font-weight: bold;
@@ -24,9 +31,16 @@ header {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: #000;
-  margin-bottom: 10px; 
+  margin-bottom: 30px; 
+  font-weight: normal;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
 }
 
 .news-header p {
@@ -38,6 +52,7 @@ hr {
   border: none;
   border-top: 1px solid #ddd;
   margin: 20px 0;
+  display: none;
 }
 
 .news-grid {
@@ -98,13 +113,12 @@ hr {
   display: table;
   background-color: rgb(177,4,14);
   font-size: 1.3rem;
-  font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .more-link:hover {
   text-align: center;
-  background-color: hsl(0, 78%, 28%);
-  border-color:hsl(0, 78%, 28%);
+  background-color: #820000;
+  border-color: #820000;
 }
 
 @media (max-width: 800px) {
@@ -112,18 +126,23 @@ hr {
       font-size: 2rem;
   }
   
-  .news-grid {
+.news-grid {
       grid-template-columns: 1fr;
   }
 }
 
 .image1 {
-    width: 467px;
-    height: 294.34px;
-    object-position: top;
-    object-fit: cover; 
-    object-position: 50% 50%;
-    
+    width: calc(50% - 45px);
+    float: left;
+    margin-left: 30px;
+    padding: 0;
+    position: relative;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
   }
 
 .news-category {
@@ -134,4 +153,7 @@ hr {
     padding: 10px; /* 文字与图片边缘的间距 */
     box-sizing: border-box; /* 让内边距包含在元素的宽度和高度内 */
     color: white; /* 文字颜色 */
+}
+.special-text {
+  font-size: 2rem; 
 }
