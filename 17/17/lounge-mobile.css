@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-size:small;
   font-family:Verdana, Helvetica, Arial;
@@ -45,3 +46,52 @@ h2 {
   background-position: top left;
 */
 }
+=======
+body {
+  font-size:small;
+  font-family:Verdana, Helvetica, Arial;
+  line-height:1.6em;
+}
+
+h1, h2 {
+  color:#007e7e;
+}
+
+h1 {
+  font-size:1.5em;
+}
+
+h2 {
+  font: size 1.3em;
+}
+
+#guarantee {
+  line-height:1.9em;
+  font-style:italic;
+  font-family:Georgia, "Times New Roman", Times, serif;
+  color:#444444;
+  border-color:white;
+  border-width:1px;
+  border-style:dashed;
+  background-color:    #a7cece;
+  padding:             25px;
+  margin:              30px;
+  background-image: url(images/background.gif);
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 25px;
+  padding-left: 80px;
+  margin-right: 250px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 0;
+/*
+  padding-left:        80px;
+  margin-right:        250px;
+  background-image:    url(images/background.gif);
+  background-repeat:   no-repeat;
+  background-position: top left;
+*/
+}
+>>>>>>> 77c0b6a047efea034e238263d04f92757c3005c6
