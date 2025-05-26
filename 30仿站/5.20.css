@@ -15,20 +15,20 @@ header {
 }
 
 /* 新闻容器 */
-.news-container {
+main.news-container {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
 /* 三栏水平布局行 */
-.articles-row {
+section.articles-row {
     display: flex;
     gap: 20px;
 }
 
 /* 特色文章卡片 */
-.featured-article-card {
+article.featured-article-card {
     flex: 2.075;
     position: relative;
     height: 350px;
@@ -38,7 +38,7 @@ header {
 }
 
 /* 普通文章卡片 */
-.article-card {
+article.article-card {
     flex: 1;
     background-color: #fff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -49,14 +49,14 @@ header {
 }
 
 /* 图片样式 */
-.featured-article-card img{
+article.featured-article-card img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.article-card img {
+article.article-card img {
     width: 100%;
     height: 65%;
     object-fit: cover;
@@ -71,7 +71,7 @@ header {
     flex-direction: column;
 }
 
-.featured-article-card .article-content {
+article.featured-article-card .article-content {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -90,11 +90,11 @@ header {
     margin-bottom: 10px;
 }
 
-.featured-article-card .category {
+article.featured-article-card .category {
     color: #fff;
 }
 
-.article-card .category {
+article.article-card .category {
     color: #b1040e;
 }
 
@@ -105,25 +105,25 @@ h2, h3 {
     font-weight: normal;
 }
 
-.featured-article-card h2 {
+article.featured-article-card h2 {
     font-size: 22px;
     color: #fff;
 }
 
-.article-card h3 {
+article.article-card h3 {
     font-size: 18px;
     color: #000;
     margin-top: auto;
     font-weight: bold;
 }
 
-.article-card h3:hover {
+article.article-card h3:hover {
     color: #006cb8;
 }
 
 /* 悬停效果 */
-.featured-article-card:hover img,
-.article-card:hover img {
+article.featured-article-card:hover img,
+article.article-card:hover img {
     transform: scale(1.03);
 }
 
@@ -154,12 +154,12 @@ h2, h3 {
 
 /* 响应式设计 */
 @media (max-width: 768px) {
-    .articles-row {
+    section.articles-row {
         flex-direction: column;
     }
     
-    .featured-article-card,
-    .article-card {
+    article.featured-article-card,
+    article.article-card {
         height: 300px;
         margin-bottom: 20px;
     }
